@@ -1,0 +1,33 @@
+# Ignore everything
+*
+
+# But don't ignore the scoresDisplay directory itself
+!scoresDisplay/
+
+# Don't ignore anything inside scoresDisplay (initially)
+!scoresDisplay/**
+
+# Now ignore specific Laravel files/directories inside scoresDisplay
+scoresDisplay/.phpunit.cache
+scoresDisplay/node_modules
+scoresDisplay/public/build
+scoresDisplay/public/hot
+scoresDisplay/public/storage
+scoresDisplay/storage/*.key
+scoresDisplay/storage/pail
+scoresDisplay/vendor
+scoresDisplay/.env
+scoresDisplay/.env.backup
+scoresDisplay/.env.production
+scoresDisplay/.phpactor.json
+scoresDisplay/.phpunit.result.cache
+scoresDisplay/Homestead.json
+scoresDisplay/Homestead.yaml
+scoresDisplay/npm-debug.log
+scoresDisplay/yarn-error.log
+scoresDisplay/auth.json
+scoresDisplay/.fleet
+scoresDisplay/.idea
+scoresDisplay/.nova
+scoresDisplay/.vscode
+scoresDisplay/.zed
