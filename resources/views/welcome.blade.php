@@ -17,7 +17,6 @@
             <h2 class="text-xl font-medium mb-4 text-[#F53003] dark:text-[#F61500]">
                 Game Scores
             </h2>
-
             @if($gameScores->count() > 0)
                 <div class="overflow-x-auto">
                     <table class="w-full">
@@ -77,13 +76,6 @@
                 <p class="text-[#706f6c] dark:text-[#A1A09A]">No CLI scores available.</p>
             @endif
         </div>
-    </div>
-
-    <!-- Back button -->
-    <div class="mt-8">
-        <a href="{{ url('/') }}" class="inline-block px-5 py-1.5 dark:text-[#EDEDEC] border-[#19140035] hover:border-[#1915014a] border text-[#1b1b18] dark:border-[#3E3E3A] dark:hover:border-[#62605b] rounded-sm text-sm leading-normal">
-            Back to Home
-        </a>
     </div>
 </div>
 </body>
