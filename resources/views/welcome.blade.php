@@ -5,7 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Game Scores</title>
-    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @if (env('APP_ENV') == 'local')
+        @vite(['resources/css/app.css', 'resources/js/app.js'])
+    @elseif(env('APP_ENV') === 'prod')
+        <link rel='stylesheet' type='text/css' href="/build/assets/app.css">
+        <script src="/build/assets/app.js"></script>
+    @endif
 </head>
 <body class="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] dark:text-[#EDEDEC] p-6">
 <div class="max-w-7xl mx-auto">
